@@ -1,0 +1,18 @@
+.actions-container {
+  margin: 10px 0;
+  button {
+    padding-inline: 10px;
+    padding-block: 5px;
+  }
+  #upload-button {
+    width: .1px;
+    height: .1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+  label[for="upload-button"] {
+    cursor: pointer;
+  }
+}

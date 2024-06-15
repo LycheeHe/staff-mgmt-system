@@ -1,0 +1,1 @@
+export const transferTime = (time) => time.replace(/T|.\d{3}Z/g, ' ').trim()

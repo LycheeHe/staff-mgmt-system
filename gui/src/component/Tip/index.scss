@@ -1,0 +1,38 @@
+@import '../../typed';
+.input-wrapper {
+  display: block;
+  font-family: monospace;
+  font-size: 125%;
+  width: 100%;
+  padding: 10px 1px;
+  > input,
+  > .placeholder {
+    display: block;
+    appearance: none;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+  }
+  > .placeholder {
+    pointer-events: none;
+    @include typed(
+      "This is more than a staff-mgmt-system system, you can manage your staffs here as well",
+      "Import and export data from excel is a powerful and handy usage, enjoy to ultilize them please!",
+      "Report the issue if you have concerns please",
+      1.5,
+      (
+        caret-width: 2px,
+        caret-space: 2px
+      )
+    );
+  }
+  > input {
+    &:focus,
+    &:active {
+      + .placeholder {
+        display: none;
+      }
+    }
+  }
+}

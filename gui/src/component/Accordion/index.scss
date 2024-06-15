@@ -1,0 +1,28 @@
+$activeTabColor: #7e8698;
+.accordion {
+  width: 100%;
+  position: relative;
+}
+.accordion-tabs {
+  position: absolute;
+  width: 100%;
+}
+.accordion-tab-head {
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #b3b3b7;
+  cursor: pointer;
+}
+.active-accordion-tab-head {
+  background-color: $activeTabColor;
+  color: rgb(242, 248, 252);
+}
+.accordion-tab-content {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding-top: 10px;
+  border-top: 2px solid $activeTabColor;
+  margin-top: 1px;
+}

@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  color: #5f626c
+}
+.staff-mgmt-system-app {
+  position: relative
+}
+
+$headerHeight: 35px;
+$mainHeight: calc(100vh - $headerHeight);
+header {
+  width: 100vw;
+  height: $headerHeight;
+}
+main {
+  height: $mainHeight;
+  overflow: hidden;
+}
+.breadcrumb {
+  padding: 10px 0;
+}
+.flex {
+  display: flex;
+  .flex-end {
+    justify-content: flex-end;
+  }
+}
+.flex-item {
+  flex: 1;
+}
+
+button {
+  border-style: solid;
+  border-width: .5px;
+  color: #5f626c;
+
+  cursor: pointer;
+  &:not(:last-child) {
+    border-right: none;
+  }
+  &:hover {
+    background-color: #5f626c;
+    color: #fff;
+  }
+}
+
+.sticky-container {
+  position: fixed;
+  bottom: 8px;
+  right: 15px;
+}
+.log-out-button {
+  padding: 6px 8px;
+  font-size: 1em;
+  background-color: rgb(226 182 182);
+  color: #ca1616;
+  border-color: #9f0a0a;
+  &:hover {
+    background-color: rgb(216 121 121);
+  color: #ca1616;
+
+  }
+}

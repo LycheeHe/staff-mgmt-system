@@ -1,0 +1,28 @@
+.menu-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  height: 35px;
+  align-items: center;
+  text-align: center;
+  background-color: #41526c;
+}
+.menu-item {
+  flex: 1;
+  font-weight: bolder;
+  position: relative;
+  height: 35px;
+  line-height: 35px;
+  .active-menu-link {
+    background-color: #273141;
+  }
+  a {
+    display: block;
+    color: rgb(217, 223, 227);
+    text-decoration: none;
+    &:hover {
+      color: #fff;
+    }
+  }
+}

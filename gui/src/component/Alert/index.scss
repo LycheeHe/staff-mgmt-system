@@ -1,0 +1,17 @@
+.alert {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 5px 12px;
+  background-color: rgb(213 209 209);
+  color: rgb(95 89 89);
+  border-radius: 3px;
+  &.error-alert {
+    background-color: rgb(243, 184, 184);
+    color: rgb(238, 15, 15);
+  }
+  &.success-alert {
+    background-color: rgb(227 239 227);
+    color: rgb(22 189 11);
+  }
+}
